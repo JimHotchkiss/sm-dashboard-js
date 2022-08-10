@@ -1,4 +1,5 @@
 const productElements = document.querySelectorAll('.product-text-chevron')
+const productItems = document.querySelectorAll('.product-items')
 
 
 productElements.forEach(productElement => {
@@ -15,6 +16,9 @@ function rotateChevron(e){
 }
 
 function openProductItems(e) {
-    console.log(e.currentTarget)
-
+    productItems.forEach(item => {
+        if (item.dataset.id === e.currentTarget.dataset.id) {
+            item.classList.toggle('open')
+        }
+    })
 }
