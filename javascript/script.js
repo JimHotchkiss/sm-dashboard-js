@@ -15,6 +15,6 @@ function rotateChevron(e){
 }
 
 function openProductItems(e) {
-    console.log(e.currentTarget.nextElementSibling)
+    console.log(e.currentTarget)
 
 }
