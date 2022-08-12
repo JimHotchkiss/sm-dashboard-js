@@ -80,6 +80,14 @@ font-family: 'Roboto', sans-serif;
     width: 40px;
     border-radius: 50%;
     background-color: var(--color-3);
+
+    cursor: pointer;
+    transition: border-radius 0.2s linear;
+}
+
+.content-home-div:hover{
+  border-radius: 30%;
+  transition: border-radius 0.2s linear;
 }
 
 .content-nav {
